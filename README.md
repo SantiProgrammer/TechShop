@@ -2,6 +2,8 @@
 
 * Se sumaron componentes:
 
-- ItemDetalContainter
+- ItemDetailContainter
 - ItemDetail
+- Rutas
+- Categorias
 
