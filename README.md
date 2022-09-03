@@ -4,6 +4,6 @@
 
 - ItemDetailContainter
 - ItemDetail
-- Rutas
+- Routing y Navegación
 - Categorias
 
