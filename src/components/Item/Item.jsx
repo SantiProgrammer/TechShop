@@ -1,9 +1,10 @@
 import React from "react";
 import ItemCount from "../itemCount/ItemCount";
 import swal from 'sweetalert'
+import { Link } from "react-router-dom";
 
 
-const Item = ({info}) => {
+const Item = ({info,id}) => {
 
     const onAdd = (qty) => {
         swal(`Has añadido ${qty} productos al carrito!`);
@@ -14,7 +15,7 @@ const Item = ({info}) => {
         <div className="item">
             <h2>{info.name}</h2>
             <img src={info.image} alt="" />
-            <button>Detalles</button>
+            <Link to={`/detalle/${info.id}`}>Detalles</Link>
             <ItemCount stock={info.stock} initial={1} onAdd={onAdd}/>
 
         </div>

@@ -2,6 +2,7 @@ import { films } from "../utils/data";
 import customFetch from "../utils/customFetch";
 import {  useState, useEffect } from "react";
 import ItemList from '../components/ItemList/ItemList';
+import { useParams } from "react-router-dom";
 
 
 
@@ -9,11 +10,20 @@ const ItemListContainer = ({ texto }) =>{
 
     const [data, setData] = useState([]);
 
+    const {categoriaId} = useParams();
+
     useEffect(() =>{
-      customFetch(films)
-          .then(result => setData(result))
-          .catch(err => console.log(err))
-    }, [])
+        if(categoriaId){ //film o item ?
+            customFetch(films.filter( film => film.category === categoriaId))
+            .then(result => setData(result))
+            .catch(err => console.log(err))
+        }else{
+            customFetch(films)
+            .then(result => setData(result))
+            .catch(err => console.log(err))
+        }
+
+    }, [categoriaId])
 
     return(
         <>
