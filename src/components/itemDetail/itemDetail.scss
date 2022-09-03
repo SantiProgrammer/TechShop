@@ -1,0 +1,51 @@
+/* item-detail */
+
+
+.detail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    img{
+        margin: 30px;
+        width: 45%;
+        border-radius: 15px;
+    }
+
+}
+
+
+.detail-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+
+
+    h2{
+        margin: 10px;
+        font-size: 25px;
+    }
+}
+
+
+.precio{
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+.description{
+    margin: 10px;
+}
+
+
+.stock{
+    margin: 10px;
+}
