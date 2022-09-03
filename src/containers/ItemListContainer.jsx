@@ -27,6 +27,7 @@ const ItemListContainer = ({ texto }) =>{
 
     return(
         <>
+        <h2 className="title-catalogo">Catalogo</h2>
         <div className="item-list-container">
             <ItemList data={data} />
         </div>

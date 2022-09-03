@@ -11,6 +11,11 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    background: rgb(226, 226, 226);
-    height: 100vh;
+    background-image: url('https://i.ibb.co/kD5wfKk/tecnowallpaper.png');
+    background-position: fixed;
+    background-color: aliceblue;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    min-height: 100vh;
 }

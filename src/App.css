@@ -11,8 +11,13 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background: rgb(226, 226, 226);
-  height: 100vh;
+  background-image: url("https://i.ibb.co/kD5wfKk/tecnowallpaper.png");
+  background-position: fixed;
+  background-color: aliceblue;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  min-height: 100vh;
 }
 
 /* components */
@@ -29,27 +34,65 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  position: fixed;
+  top: 10px;
+  border-radius: 5px;
   height: 50px;
-  background: black;
+  background: rgba(98, 101, 255, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 999;
 }
 .navbar-container nav a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+  transition: all ease 0.2s;
+}
+.navbar-container nav a:hover {
+  transform: scale(1.1);
 }
 
 .logo {
   width: 130px;
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.5));
 }
 
 /* footer */
-.footer {
+.footer-container {
   display: flex;
-  align-self: flex-end;
-  background: black;
-  position: absolute;
-  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.footer-container Footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  display: none;
+  bottom: 10px;
+  border-radius: 5px;
   height: 50px;
+  background: rgba(98, 101, 255, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+.footer-container Footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all ease 0.2s;
+}
+.footer-container Footer a:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 130px;
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.5));
 }
 
 /* cart widget */
@@ -118,18 +161,6 @@ button:hover {
   background-color: rgba(44, 65, 255, 0.7803921569);
 }
 
-/* header */
-.Header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 90px;
-}
-.Header h1 {
-  text-transform: capitalize;
-  font-size: 35px;
-}
-
 /* item */
 .item {
   display: flex;
@@ -139,16 +170,37 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.5);
   width: 300px;
   border-radius: 10px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   margin: 10px;
-  padding: 10px;
+}
+.item h2 {
+  margin: 10px;
 }
 .item img {
   width: 200px;
   border-radius: 10px;
 }
+.item p {
+  margin: 10px;
+  font-weight: bolder;
+}
+.item .detalles-link {
+  color: grey;
+  text-decoration: none;
+  margin: 10px;
+}
+.item .detalles-link:hover {
+  color: black;
+}
 
 /* item-detail */
+.title-detalles {
+  font-size: 40px;
+  margin: 50px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .detail-container {
   display: flex;
   justify-content: center;
@@ -189,8 +241,57 @@ button:hover {
   margin: 10px;
 }
 
+/* home */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home-container .portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home-container .portada-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px;
+}
+.home-container .portada-box-1 h3 {
+  margin: 5px;
+  font-size: 35px;
+}
+.home-container .portada-box-1 h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.home-container .portada-box-1 p {
+  font-weight: bolder;
+  margin: 10px;
+}
+.home-container .portada-box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.home-container .portada-box-2 img {
+  width: 400px;
+}
+
 /* containers */
 /* ItemListContainer */
+.title-catalogo {
+  margin-top: 110px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
 .item-list-container {
   display: flex;
   align-items: center;
@@ -198,6 +299,7 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 1100px;
+  margin-bottom: 70px;
 }
 
 /* ItemDetailContainer */

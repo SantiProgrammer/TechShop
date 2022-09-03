@@ -5,7 +5,7 @@ let customFetch = (task) => {
             if (is_ok) {
                 setTimeout(() => {
                         resolve(task)
-                }, 500); 
+                }, 100); 
             } else{
                 reject("Error")
             }

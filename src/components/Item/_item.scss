@@ -8,14 +8,34 @@
     background-color: rgba(255, 255, 255, 0.5);
     width: 300px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     margin: 10px;
-    padding: 10px;
+
+    h2{
+        margin: 10px;
+
+    }
 
 
     img{
         width: 200px;
         border-radius: 10px;
+    }
+
+    p{
+        margin: 10px;
+        font-weight: bolder;
+    }
+
+    .detalles-link{
+        color: grey;
+        text-decoration: none;
+        margin: 10px;
+
+        &:hover{
+            color: black;
+
+        }
     }
 
 }
