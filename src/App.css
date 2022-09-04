@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://i.ibb.co/kD5wfKk/tecnowallpaper.png");
-  background-position: fixed;
+  background-image: url(https://i.ibb.co/kD5wfKk/tecnowallpaper.png);
+  background-attachment: fixed;
   background-color: aliceblue;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -42,6 +42,7 @@
   background: rgba(49, 59, 69, 0.7);
   backdrop-filter: blur(10px);
   z-index: 999;
+  box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.22);
 }
 .navbar-container nav a {
   color: white;
@@ -76,12 +77,15 @@
   font-size: 14px;
   transform: translateX(-30px);
   transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-  color: rgb(0, 0, 0);
-  font-weight: bolder;
-  line-height: 1px;
-  background: rgb(255, 255, 255);
-  height: 15px;
-  width: 15px;
+  font-weight: 500;
+  line-height: 2px;
+  background: #82dd5d;
+  height: 20px;
+  color: white;
+  width: 20px;
+  position: relative;
+  top: -13px;
+  right: -4px;
   border-radius: 10px;
 }
 .cart-widget:hover {
@@ -92,6 +96,7 @@
   font-size: 15px;
   transform: translateX(-5px);
   color: black;
+  background: #ffffff;
 }
 
 .carrito {
@@ -103,11 +108,24 @@
 .cart-container {
   display: flex;
   align-items: center;
+  justify-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
 }
 .cart-container h2 {
-  font-size: 30px;
+  font-size: 33px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin: 25px;
+}
+.cart-container h2 img {
+  width: 65px;
+  margin-left: 10px;
 }
 
 .cart-card {
@@ -121,6 +139,7 @@
   border-radius: 10px;
   backdrop-filter: blur(5px);
   margin: 10px;
+  box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.0549019608);
 }
 
 /* item count */
@@ -196,6 +215,7 @@ button:hover {
   border-radius: 10px;
   backdrop-filter: blur(5px);
   margin: 10px;
+  box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.0549019608);
 }
 .item h2 {
   margin: 10px;
