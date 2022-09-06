@@ -285,6 +285,21 @@ button:hover {
   margin: 10px;
 }
 
+.check-out {
+  background: orange;
+  margin: 5px;
+  border: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
 /* home */
 .home-container {
   display: flex;

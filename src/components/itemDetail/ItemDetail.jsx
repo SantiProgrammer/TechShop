@@ -27,7 +27,7 @@ const ItemDetail = ({ data }) =>{
             <p className="stock">Stock: {data.stock} piezas</p>
             {
                 goToCart
-                ? <Link to='/cart'>Terminar compra</Link>
+                ? <Link className='check-out' to='/cart'>Terminar compra</Link>
                 : <ItemCount stock={data.stock} initial={1} onAdd={onAdd}/>
             }
             
