@@ -1,9 +1,5 @@
 # Techno Tienda
 
-* Se sumaron componentes:
 
-- ItemDetailContainter
-- ItemDetail
-- Routing y Navegación
-- Categorias
+- Se sumo el evento que retira el ItemCount y coloca un enlace al carrito.
 
