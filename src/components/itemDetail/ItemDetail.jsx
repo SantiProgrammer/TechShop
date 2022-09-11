@@ -1,6 +1,7 @@
 import ItemCount from "../itemCount/ItemCount";
+import { useCartContext } from "../../context/CartContext";
 import swal from "sweetalert";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
 
@@ -9,9 +10,13 @@ const ItemDetail = ({ data }) =>{
     const [goToCart, SetGoToCart] = useState(false)
 
 
+    const { addProdruct } = useCartContext();
+
+
     const onAdd = (qty) => {
-        swal(`Has añadido ${qty} productos al carrito!`);
+        swal(`Has añadido ${qty} ${data.name} al carrito!`);
         SetGoToCart(true);
+        addProdruct(data, qty);
       }
 
 

@@ -1,19 +1,20 @@
-
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import ItemListContainer from './containers/ItemListContainer';
-import ItemDetailContainer from './containers/ItemDetailContainer';
-/* import Footer from './components/footer/Footer'; */
-import Cart from './components/cart/Cart';
-import Home from './components/Home/Home';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from './components/Cart/Cart';
+import ItemDetailContainer from './containers/ItemDetailContainer';
+import ItemListContainer from './containers/ItemListContainer';
+import Navbar from './components/navbar/Navbar';
+import Home from './components/Home/Home';
+import { CartProvider } from './context/CartContext';
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar/>
+        <CartProvider>
+          <Navbar/>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/catalogo' element={<ItemListContainer/>}/>
@@ -21,8 +22,8 @@ function App() {
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>}/>
           </Routes>
-        {/* <Footer/> */}
-      </BrowserRouter>
+        </CartProvider>
+      </BrowserRouter> 
     </div>
   );
 }

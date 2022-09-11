@@ -4,9 +4,9 @@
 /* components */
 
 @import './components/navbar/navbar';
-/* @import './components/footer/footer'; */
 @import './components/cartWidget/cartWidget';
-@import './components/cart/cart';
+@import './components/cart/Cart';
+@import './components/ItemCart/itemCart';
 @import './components/itemCount/itemCount';
 @import './components/Item/item';
 @import './components/itemDetail/itemDetail';

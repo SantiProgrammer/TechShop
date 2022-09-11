@@ -83,9 +83,9 @@ export const films = [
   {
     id: 10,
     name: "Mac Air M2",
-    price:  29000,
+    price: 29000.00,
     stock: 10,
-    description:'CPU de 8 núcleos GPU de 8 núcleos Memoria unificada de 8 GB Almacenamiento SSD de 256 GB¹',
+    description: 'CPU de 8 núcleos GPU de 8 núcleos Memoria unificada de 8 GB Almacenamiento SSD de 256 GB¹',
     image: "https://i.ibb.co/4FRpPgp/macbook-air-silver-select-20220606.webp",
     min: 1,
     category: 'mac'
@@ -95,7 +95,7 @@ export const films = [
     name: "Mac Mini M1",
     price: 17999,
     stock: 2,
-    description:'Chip M1 de Apple con CPU de 8 núcleos y GPU de 8 núcleos Almacenamiento de 256 GB',
+    description: 'Chip M1 de Apple con CPU de 8 núcleos y GPU de 8 núcleos Almacenamiento de 256 GB',
     image: "https://i.ibb.co/Ws9hn21/mac-mini-hero-202011.webp",
     min: 1,
     category: 'mac'
