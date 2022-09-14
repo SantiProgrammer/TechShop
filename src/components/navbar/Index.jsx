@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import CartWidget from "../cartWidget/CartWidget";
+import CartWidget from "../cartWidget/Index";
 
 
-const Footer = () =>{
+const Navbar = () =>{
     return(
         <>
-        <div className="footer-container">
-            <footer>
-                <NavLink to='/home'><img className="logo" src="http://tecnotiendadigital.com/wp-content/uploads/LOGO.png" alt="" /></NavLink>
+        <div className="navbar-container">
+            <nav>
+                <NavLink to='/'><img className="logo" src="http://tecnotiendadigital.com/wp-content/uploads/LOGO.png" alt="" /></NavLink>
                 <NavLink to='/catalogo'>Catalogo</NavLink>
                 <NavLink to='/categoria/windows'>Windows</NavLink>
                 <NavLink to='/categoria/mac'>Mac</NavLink>
@@ -15,7 +15,7 @@ const Footer = () =>{
                     <CartWidget/>
                 </NavLink>
                 
-            </footer>
+            </nav>
         </div>
 
         </>
@@ -23,4 +23,4 @@ const Footer = () =>{
 }
 
 
-export default Footer;
+export default Navbar;

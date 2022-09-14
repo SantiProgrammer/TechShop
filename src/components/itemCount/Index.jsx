@@ -25,7 +25,7 @@ const ItemCount = ({ stock=0, initial=1, onAdd}) => {
             <div className="product-amount">{count}</div>
             <button className='cube' variant="text" onClick={increment}>+</button>
             {
-                stock
+                stock && count
                 ? <button className='add-cart-button' variant="contained" color="primary" onClick={() => onAdd(count)}>Añadir al carrito</button>
                 : <button className='add-cart-button' variant="contained" disabled>Add to Cart</button>
             }

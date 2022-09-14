@@ -1,7 +1,7 @@
-import { films } from "../utils/data";
-import customFetch from "../utils/customFetch";
+import { films } from "../../utils/data";
+import customFetch from "../../utils/customFetch";
 import {  useState, useEffect } from "react";
-import ItemList from '../components/ItemList/ItemList';
+import ItemList from '../../components/ItemList/Index';
 import { useParams } from "react-router-dom";
 
 

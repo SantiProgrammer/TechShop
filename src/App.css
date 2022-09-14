@@ -1,5 +1,4 @@
-/* app */
-/* app/body */
+/* app */ /* app/body */
 * {
   margin: 0;
   padding: 0;
@@ -250,7 +249,7 @@ button:hover {
   transition: all ease 0.1s;
 }
 .cube:active {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .product-amount {

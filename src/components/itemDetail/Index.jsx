@@ -1,4 +1,4 @@
-import ItemCount from "../itemCount/ItemCount";
+import ItemCount from '../ItemCount/Index';
 import { useCartContext } from "../../context/CartContext";
 import swal from "sweetalert";
 import React, { useState } from "react";
