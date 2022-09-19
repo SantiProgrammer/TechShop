@@ -3,8 +3,6 @@ import { getFirestore, collection, getDocs, query, where } from 'firebase/firest
 import {  useState, useEffect } from "react";
 import ItemList from '../../components/ItemList/Index';
 import { useParams } from "react-router-dom";
-import { getDefaultNormalizer } from '@testing-library/react';
-
 
 
 const ItemListContainer = ({ texto }) =>{

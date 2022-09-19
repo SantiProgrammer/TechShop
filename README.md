@@ -1,3 +1,3 @@
 # Techno Tienda
 
-- Se sumo el cartContext.jsx
+- Se base de datos en Firebase
