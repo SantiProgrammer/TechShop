@@ -1,3 +1,3 @@
 # Tecno Tienda
 
-- Se base de datos en Firebase
+- Se sumo base de datos en Firebase
