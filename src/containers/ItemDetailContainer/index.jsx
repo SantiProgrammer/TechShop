@@ -1,7 +1,6 @@
 import React from "react";
 import ItemDetail from "../../components/ItemDetail/Index";
-import { films } from "../../utils/data";
-import customFetch from "../../utils/customFetch";
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import {  useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -14,10 +13,11 @@ const ItemDetailContainer = () =>{
     const {detalleId} = useParams();
 
     useEffect(() =>{
-      customFetch(films.find(film => film.id === parseInt(detalleId)))
-          .then(result => setData(result))
-          .catch(err => console.log(err))
-    }, [])
+        const querydb = getFirestore();
+        const queryDoc = doc(querydb, 'products', detalleId);
+        getDoc(queryDoc)
+            .then(res => setData({id: res.id, ...res.data()}))
+    }, [detalleId])
 
 
     return(

@@ -1,8 +1,9 @@
-import { films } from "../../utils/data";
-import customFetch from "../../utils/customFetch";
+import React from 'react';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 import {  useState, useEffect } from "react";
 import ItemList from '../../components/ItemList/Index';
 import { useParams } from "react-router-dom";
+import { getDefaultNormalizer } from '@testing-library/react';
 
 
 
@@ -13,16 +14,16 @@ const ItemListContainer = ({ texto }) =>{
     const {categoriaId} = useParams();
 
     useEffect(() =>{
-        if(categoriaId){ //film o item ?
-            customFetch(films.filter( film => film.category === categoriaId))
-            .then(result => setData(result))
-            .catch(err => console.log(err))
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, 'products');
+        if(categoriaId){ 
+            const queryFilter = query(queryCollection, where('category', '==', categoriaId));
+            getDocs(queryFilter)
+            .then(res => setData(res.docs.map(product => ({id: product.id, ...product.data() }))))
         }else{
-            customFetch(films)
-            .then(result => setData(result))
-            .catch(err => console.log(err))
+            getDocs(queryCollection)
+            .then(res => setData(res.docs.map(product => ({id: product.id, ...product.data() }))))
         }
-
     }, [categoriaId])
 
     return(
