@@ -1,3 +1,3 @@
 # Tecno Tienda
 
-- Se sumo base de datos en Firebase
+- Se sumo Desafío: Item Collection II
