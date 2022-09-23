@@ -78,10 +78,8 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-- **Andrés Villanueva** - _Trabajo Inicial_ - [villanuevand](https://github.com/villanuevand)
-- **Fulanito Detal** - _Documentación_ - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
+- **Santiago Morera** - _Trabajo Inicial_ - [Santi.iztli.dev](https://github.com/santi-iztli)
+- **Santiago Morera** - _Documentación_ - [Santi.iztli.dev](https://github.com/santi-iztli)
 
 ## Licencia 📄
 
