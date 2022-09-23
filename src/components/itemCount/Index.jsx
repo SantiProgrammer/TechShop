@@ -1,12 +1,12 @@
 import {useEffect, useState} from 'react';
 
 
-const ItemCount = ({ stock=0, initial=1, onAdd}) => {
+const ItemCount = ({ stock, initial=0, onAdd}) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
         setCount(initial);
-    },[]);
+    },[initial]);
 
     const increment = () => {
         if (count < stock){
@@ -21,13 +21,13 @@ const ItemCount = ({ stock=0, initial=1, onAdd}) => {
     }
     return(
         <div className="product-amount-container">
-            <button className='cube' variant="text" onClick={decrement}>-</button>
+            <button disabled={count <= 1}  className='cube' variant="text" onClick={decrement}>-</button>
             <div className="product-amount">{count}</div>
-            <button className='cube' variant="text" onClick={increment}>+</button>
+            <button disabled={count >= stock} className='cube' variant="text" onClick={increment}>+</button>
             {
                 stock && count
                 ? <button className='add-cart-button' variant="contained" color="primary" onClick={() => onAdd(count)}>Añadir al carrito</button>
-                : <button className='add-cart-button' variant="contained" disabled>Add to Cart</button>
+                : <button className='add-cart-button' variant="contained" disabled={stock <= 0}>Añadir al carrito</button>
             }
         </div>
     );

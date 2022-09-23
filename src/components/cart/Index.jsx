@@ -52,7 +52,7 @@ const Cart = () => {
         return(
             <>
             <div className="cart-card" >
-                <h1>No hay productos en el carrito 😔</h1>
+                <h1>Carrito vacio...</h1>
                 <Link className='check-out' to='/catalogo'>⬅️ Hacer compras</Link>
             </div>
 
