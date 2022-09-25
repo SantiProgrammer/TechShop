@@ -13,30 +13,30 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 90%;
+        width: 100%;
+        top: 0;
         position: fixed;
-        top:10px;
-        border-radius: 5px;
         height: 50px;
         background: rgb(49 59 69 / 70%);
         backdrop-filter: blur(10px);
         z-index: 999;
         box-shadow: 3px 2px 6px 1px rgb(0 0 0 / 22%);
 
-        a{
+        a{  
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: all ease .2s;
+            transition: all ease .1s;
 
             &:hover{
-                transform: scale(1.1);
+                transform: scale(1.05);
+                color: turquoise;
             }
             
         }
-
-
-       
     }
 }
 
@@ -44,4 +44,9 @@
 .logo{
     width: 130px;
     filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.9));
+}
+
+.brand-logo{
+    width: 25px;
+    margin-right: 10px;
 }

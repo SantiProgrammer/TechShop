@@ -51,7 +51,7 @@ const Cart = () => {
     if(cart.length === 0){
         return(
             <>
-            <div className="cart-card" >
+            <div className="cart-card-checkout" >
                 <h1>Carrito vacio...</h1>
                 <Link className='check-out' to='/catalogo'>⬅️ Hacer compras</Link>
             </div>

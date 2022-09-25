@@ -61,14 +61,16 @@
 
 
 .check-out{
-    background: orange;
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: rgba(49, 59, 69, 0.7);
+    margin: 51px;
     border: none;
     color: white;
-    padding: 5px 5px 5px 5px;
+    padding: 14px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 5px;
     transition: all 0.2s linear;

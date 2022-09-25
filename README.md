@@ -4,6 +4,8 @@ _Es una simulacion hecha con React Js de un e-coomerce en este caso un tienda de
 
 ## Comenzando 🚀
 
+_Video_
+
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
 Mira **Deployment** para conocer como desplegar el proyecto.

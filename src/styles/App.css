@@ -44,10 +44,9 @@ code {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  top: 0;
   position: fixed;
-  top: 10px;
-  border-radius: 5px;
   height: 50px;
   background: rgba(49, 59, 69, 0.7);
   backdrop-filter: blur(10px);
@@ -55,18 +54,27 @@ code {
   box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.22);
 }
 .navbar-container nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: all ease 0.2s;
+  transition: all ease 0.1s;
 }
 .navbar-container nav a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  color: turquoise;
 }
 
 .logo {
   width: 130px;
   filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.9));
+}
+
+.brand-logo {
+  width: 25px;
+  margin-right: 10px;
 }
 
 /* cart widget */
@@ -148,6 +156,23 @@ code {
   margin: 10px;
   box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.0549019608);
   padding: 20px;
+}
+
+.cart-card-checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin: 10px;
+  /* box-shadow: 3px 2px 6px 1px rgb(0 0 0 / 5%); */
+  padding: 20px;
+}
+.cart-card-checkout h1 {
+  margin: 1rem;
 }
 
 .cart-item {
@@ -363,14 +388,16 @@ button:hover {
 }
 
 .check-out {
-  background: orange;
-  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background: rgba(49, 59, 69, 0.7);
+  margin: 51px;
   border: none;
   color: white;
-  padding: 5px 5px 5px 5px;
+  padding: 14px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 5px;
   transition: all 0.2s linear;
