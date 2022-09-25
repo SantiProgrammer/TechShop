@@ -72,7 +72,7 @@ const Cart = () => {
             <div className='cart-footer' >
                 <p>Total: $ {totalPrice()}</p>
                 <button onClick={() => clearCart()} >Vaciar carrito</button>
-                <button onClick={createOrder} >Terminar la compra</button>
+                <button className='check-out' onClick={createOrder} >Terminar la compra</button>
             </div>
             </div>
             </>
