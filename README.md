@@ -4,10 +4,9 @@ _Es una simulacion hecha con React Js de un e-coomerce en este caso un tienda de
 
 ## Comenzando 🚀
 
-_Video y Screenshot_
+_Screenshot y Click para ver el video _
 
-![VideoDeContenido](https://youtu.be/hLNLH--a40w)
-[![ScreenShot](https://i.ibb.co/BzLW7D1/tecnotienda.png)](https://youtu.be/hLNLH--a40w)
+[![Click para ver video](https://i.ibb.co/BzLW7D1/tecnotienda.png)](https://youtu.be/hLNLH--a40w)
 
 ### Instalación 🔧
 
