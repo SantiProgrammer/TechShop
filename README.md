@@ -10,45 +10,21 @@ _Screenshot y Click para ver el video _
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Abrir la carpeta del protecto en VSCode_
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+_Abrir una terminal en la carpeta del proyecto_
 
 ```
-hasta finalizar
+Ejecutar el comando: npm install
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
+_al finalizar_
 
 ```
-Da un ejemplo
+Ejecuta el comando: npm start
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
+_El proyecto deberia iniciarse con normalidad en la ventana de tu explorador_
 
 ## Construido con 🛠️
 
