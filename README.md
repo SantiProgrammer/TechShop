@@ -32,10 +32,6 @@ _El proyecto deberia iniciarse con normalidad en la ventana de tu explorador_
 - [Sass](https://sass-lang.com/documentation/) - Usado para procesar estilos css
 - [Firebase](https://firebase.google.com/docs?authuser=0&hl=es) - Usado para almacenar la base de datos
 
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
 ## Autores ✒️
 
 - **Santiago Morera** - _Trabajo Inicial_ - [Santi.iztli.dev](https://github.com/santi-iztli)
