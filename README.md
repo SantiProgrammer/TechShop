@@ -1,4 +1,4 @@
-# TecnoShop
+# Tecno Tienda
 
 _Es una simulacion hecha con React Js de un e-coomerce en este caso un tienda de computadoras o tecnologia._
 
@@ -25,6 +25,14 @@ Ejecuta el comando: npm start
 ```
 
 _El proyecto deberia iniciarse con normalidad en la ventana de tu explorador_
+
+## Iniciar Sass con comando: ✍
+
+_para modificar estilos ejecurar comando en la carpeta del proyecto_
+
+```
+sass --watch  src/styles/style.scss src/styles/App.css
+```
 
 ## Construido con 🛠️
 

@@ -1,47 +1,47 @@
 /* cart widget */
 
-.cart-widget{
+.cart-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+  transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  p {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 14px;
+    transform: translateX(-30px);
+    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-weight: 500;
+    line-height: 2px;
+    background: #82dd5d;
+    height: 20px;
+    color: white;
+    width: 20px;
+    position: relative;
+    top: -13px;
+    right: -4px;
     border-radius: 10px;
-    transition: .5s all cubic-bezier(0.165, 0.84, 0.44, 1) ;
-
-    p{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 10px;
-        font-size: 14px;
-        transform: translateX(-30px);
-        transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-        font-weight: 500;
-        line-height: 2px;
-        background: #82dd5d;
-        height: 20px;
-        color: white;
-        width: 20px;
-        position: relative;
-        top: -13px;
-        right: -4px;
-        border-radius: 10px;
-    }
-
-    &:hover{
-        transform: scale(1.1);
-    }
-
-    &:hover p{
-        margin-left: 10px;
-        font-size: 15px;
-        transform: translateX(-5px);
-        color: black;
-        background: #ffffff;
-    }
   }
 
-  .carrito{
-    width: 40px;
-    transition: .5s all cubic-bezier(0.165, 0.84, 0.44, 1) ;
+  &:hover {
+    transform: scale(1.1);
   }
+
+  &:hover p {
+    margin-left: 10px;
+    font-size: 15px;
+    transform: translateX(-5px);
+    color: black;
+    background: #ffffff;
+  }
+}
+
+.carrito {
+  width: 40px;
+  transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
