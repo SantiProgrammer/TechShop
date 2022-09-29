@@ -9,7 +9,7 @@ const Navbar = () => {
           <NavLink to="/">
             <img
               className="logo"
-              src="http://tecnotiendadigital.com/wp-content/uploads/LOGO.png"
+              src="https://pr0.nicelocal.com.mx/-CxvNGKuaNBfwkz4kpg5jQ/440x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2QDTPWtoy3_NxBcxp_Wq_EE5XlxlVXV4F-8lU_yFs-Oym41JMQLUd3PL90pSDCyAcw"
               alt=""
             />
           </NavLink>

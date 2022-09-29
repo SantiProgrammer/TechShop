@@ -68,8 +68,8 @@ code {
 }
 
 .logo {
-  width: 130px;
-  filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.9));
+  width: 82px;
+  filter: drop-shadow(0px 0px 2px white);
 }
 
 .brand-logo {

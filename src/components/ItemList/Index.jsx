@@ -17,8 +17,8 @@ const ItemList = ({ data = [] }) => {
 
   return (
     <>
-      {data.map((film) => (
-        <Item key={film.id} info={film} />
+      {data.map((product) => (
+        <Item key={product.id} info={product} />
       ))}
     </>
   );
