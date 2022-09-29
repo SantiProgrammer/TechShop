@@ -212,18 +212,28 @@ code {
 }
 
 /* itemList */
-.item-list {
+.item-list-loader {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.item-list p {
+.item-list-loader p {
   font-size: 30px;
   font-weight: 500;
 }
-.item-list img {
-  width: 100px;
+.item-list-loader img {
+  width: 80px;
+}
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 /* itemCart */
