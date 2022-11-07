@@ -31,7 +31,7 @@ _El proyecto deberia iniciarse con normalidad en la ventana de tu explorador_
 _para modificar estilos ejecurar comando en la carpeta del proyecto_
 
 ```
- --watch src/styles/style.scss src/styles/App.css
+sass --watch src/styles/style.scss src/styles/App.css
 ```
 
 ## Construido con 🛠️

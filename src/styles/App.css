@@ -30,6 +30,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+/* animaciones */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* components */
 /* navbar */
 .navbar-container {
@@ -52,6 +109,7 @@ code {
   backdrop-filter: blur(10px);
   z-index: 999;
   box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.22);
+  animation: fadeInDown 1s;
 }
 .navbar-container nav a {
   display: flex;
@@ -170,6 +228,7 @@ code {
   margin: 10px;
   /* box-shadow: 3px 2px 6px 1px rgb(0 0 0 / 5%); */
   padding: 20px;
+  animation: fadeInUp 1s;
 }
 .cart-card-checkout img {
   width: 60%;
@@ -386,6 +445,7 @@ button:hover {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: fadeInUp 1s;
 }
 .detail-container img {
   margin: 30px;
@@ -405,6 +465,7 @@ button:hover {
 .detail-column h2 {
   margin: 10px;
   font-size: 25px;
+  animation: fadeInDown 0.6s;
 }
 
 .precio {
@@ -453,6 +514,7 @@ button:hover {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: fadeInUp 1s;
 }
 .home-container .portada-box-1 {
   display: flex;
@@ -460,6 +522,7 @@ button:hover {
   align-items: flex-start;
   flex-direction: column;
   padding: 50px;
+  animation: fadeIn 1s;
 }
 .home-container .portada-box-1 h3 {
   margin: 5px;
@@ -478,6 +541,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 50px;
+  animation: fadeIn 1s;
 }
 .home-container .portada-box-2 img {
   width: 400px;
@@ -490,6 +554,7 @@ button:hover {
   margin-bottom: 50px;
   font-size: 40px;
   text-transform: capitalize;
+  animation: fadeInDown 1s;
 }
 
 .item-list-container {
@@ -501,6 +566,7 @@ button:hover {
   max-width: 1100px;
   margin-bottom: 70px;
   z-index: 9;
+  animation: fadeInUp 1s;
 }
 
 /*# sourceMappingURL=App.css.map */

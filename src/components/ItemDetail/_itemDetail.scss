@@ -13,6 +13,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: fadeInUp 1s;
 
   img {
     margin: 30px;
@@ -33,6 +34,7 @@
   h2 {
     margin: 10px;
     font-size: 25px;
+    animation: fadeInDown .6s;
   }
 }
 

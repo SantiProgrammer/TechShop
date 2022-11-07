@@ -5,6 +5,7 @@
   margin-bottom: 50px;
   font-size: 40px;
   text-transform: capitalize;
+  animation: fadeInDown 1s;
 }
 
 .item-list-container {
@@ -16,4 +17,5 @@
   max-width: 1100px;
   margin-bottom: 70px;
   z-index: 9;
+  animation: fadeInUp 1s;
 }
