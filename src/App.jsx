@@ -30,10 +30,7 @@ function App() {
         </CartProvider>
       </BrowserRouter>
 
-      <div
-        id="elemID031021"
-        style="line-height:16px;text-align:center;position:relative;z-index:100000;"
-      >
+      <div id="elemID031021">
         <script
           async
           type="text/javascript"
