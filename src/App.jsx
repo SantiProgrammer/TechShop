@@ -45,7 +45,6 @@ function App() {
               src="//s2.tracemyip.org/vLg/1500~1693092042~14*2~0F5999*F7FFE6*537899*000000~1*1*0*0*0/4684NR-IPIB/100993/11/12/ans/"
               alt="Cookieless user user tracker"
               referrerpolicy="no-referrer-when-downgrade"
-              style="border:0px;"
             />
           </a>
         </noscript>
