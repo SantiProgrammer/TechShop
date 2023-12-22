@@ -1,4 +1,5 @@
-/* app */ /* app/body */
+/* app */
+/* app/body */
 * {
   margin: 0;
   padding: 0;
@@ -33,41 +34,33 @@ code {
 /* animaciones */
 @keyframes fadeInUp {
   from {
-    transform: translateY(100px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
     opacity: 1;
   }
 }
 @-webkit-keyframes fadeInUp {
   from {
-    transform: translateY(100px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes fadeInDown {
   from {
-    transform: translatey(-100px);
     opacity: 0;
   }
   to {
-    transform: translatey(0px);
     opacity: 1;
   }
 }
 @-webkit-keyframes fadeInDown {
   from {
-    transform: translatey(-100px);
     opacity: 0;
   }
   to {
-    transform: translatey(0px);
     opacity: 1;
   }
 }
@@ -544,7 +537,7 @@ button:hover {
   animation: fadeIn 1s;
 }
 .home-container .portada-box-2 img {
-  width: 400px;
+  width: 300px;
 }
 
 /* containers */

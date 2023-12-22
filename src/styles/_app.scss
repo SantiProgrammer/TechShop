@@ -40,48 +40,48 @@ code {
 
 @keyframes fadeInUp {
   from {
-    transform: translateY(100px);
+    //transform: translateY(100px);
     opacity: 0;
   }
 
   to {
-    transform: translateY(0);
+    //transform: translateY(0);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeInUp {
   from {
-    transform: translateY(100px);
+    //transform: translateY(100px);
     opacity: 0;
   }
 
   to {
-    transform: translateY(0);
+    //transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes fadeInDown {
   from {
-    transform: translatey(-100px);
+    //transform: translatey(-100px);
     opacity: 0;
   }
 
   to {
-    transform: translatey(0px);
+    //transform: translatey(0px);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeInDown {
   from {
-    transform: translatey(-100px);
+    //transform: translatey(-100px);
     opacity: 0;
   }
 
   to {
-    transform: translatey(0px);
+    //transform: translatey(0px);
     opacity: 1;
   }
 }
