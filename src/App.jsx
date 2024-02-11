@@ -1,4 +1,4 @@
-import "./styles/App.css"
+import "./styles/style.scss"
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Cart from "./components/Cart/Index"
