@@ -1,5 +1,4 @@
 import Item from "../Item/Index";
-import React from "react";
 
 const ItemList = ({ data = [] }) => {
   if (data.length === 0)
@@ -11,7 +10,6 @@ const ItemList = ({ data = [] }) => {
         </div>
       </>
     )
-
   return (
     <>
       <div className="item-list">

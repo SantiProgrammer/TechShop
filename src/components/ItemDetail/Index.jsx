@@ -1,7 +1,7 @@
 import ItemCount from "../ItemCount/Index";
 import { useCartContext } from "../../context/CartContext";
 import swal from "sweetalert";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const ItemDetail = ({ data }) => {
